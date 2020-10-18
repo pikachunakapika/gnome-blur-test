@@ -36,13 +36,13 @@ class Extension {
     enable() {
 
         
-        let blurEffect = new Shell.BlurEffect({sigma: 15, mode: Shell.BlurMode.BACKGROUND});
+        let blurEffect = new Shell.BlurEffect({sigma: 20, mode: Shell.BlurMode.BACKGROUND});
         this.blurActor = new Clutter.Actor({visible: true});
         
         this.blurActor.add_effect_with_name('blur-effect', blurEffect);
         
         this.widget = new St.Widget({
-            style: 'background-color: rgba(100, 100, 100, 0.2); border-radius: 200px',
+            style: 'background-color: rgba(100, 100, 100, 0.2);', /* border-radius: 200px = ugly blurred round corner background :( */
             x: 600, y: 600,
             width: 400, height: 400,
             reactive: true
