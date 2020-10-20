@@ -28,10 +28,6 @@ const ExtensionManager = Main.extensionManager;
 
 const DashToDock = ExtensionManager.lookup('dash-to-dock@micxgx.gmail.com');
 
-print(DashToDock);
-
-
-
 class Extension {
     constructor() {
     }
