@@ -41,8 +41,8 @@ class Extension {
         target.add_effect_with_name('blur-effect', blurEffect);
     }
 
-    // Don't thinks is extra actor for blur alone is needed...
     /*
+    // Don't think extra actor for blur alone is needed...
     add_blur_actor(target, container) {
 
         if (!container) 
